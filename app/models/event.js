@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+const rsvpSchema = require('./rsvp')
 
 const eventSchema = new mongoose.Schema({
   title: {
@@ -17,7 +18,8 @@ const eventSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',
     required: true
-  }
+  },
+  rsvps: [rsvpSchema]
 }, {
   timestamps: true
 })
