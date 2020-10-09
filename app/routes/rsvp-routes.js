@@ -27,4 +27,20 @@ router.post('/rsvps', requireToken, (req, res, next) => {
     .catch(next)
 })
 
+// DESTROY
+// DELETE /reviews/:id
+router.delete('/rsvps/:id', requireToken, (req, res, next) => {
+  const id = req.params.id
+  Event.findOne({ 'rsvps._id': id })
+    .then(handle404)
+    .then(event => {
+      event.rsvps.id(id).remove()
+      // Alternatively
+      // restaurants.reviews.pull(id)
+      return event.save()
+    })
+    .then(() => res.sendStatus(204))
+    .catch(next)
+})
+
 module.exports = router

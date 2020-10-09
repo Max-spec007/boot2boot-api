@@ -12,7 +12,8 @@ curl "${API}${URL_PATH}/${ID}" \
   "event": {
     "title": "'"${TITLE}"'",
     "notes": "'"${NOTES}"'",
-    "date": "'"${DATE}"'"
+    "date": "'"${DATE}"'",
+    "rsvps": "'"${rsvp}"'"
     }
   }'
 
