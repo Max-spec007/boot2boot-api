@@ -1,4 +1,4 @@
-curl 'http://localhost:4741/' \
+curl 'http://localhost:4741/rsvps' \
   --include \
   --request POST \
   --header "Content-Type: application/json" \
