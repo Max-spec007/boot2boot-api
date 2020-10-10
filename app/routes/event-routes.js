@@ -48,6 +48,7 @@ router.get('/events', (req, res, next) => {
 router.get('/events/:id', (req, res, next) => {
   // req.params.id will be set based on the `:id` in the route
   Event.findById(req.params.id)
+    .populate('rsvps.owner')
     .then(handle404)
     // if `findById` is succesful, respond with 200 and "example" JSON
     .then(event => res.status(200).json({ event: event.toObject() }))
