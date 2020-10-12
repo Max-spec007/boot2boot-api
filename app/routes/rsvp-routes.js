@@ -1,8 +1,6 @@
 const express = require('express')
 const router = express.Router()
 const passport = require('passport')
-const customErrors = require('../../lib/custom_errors')
-const requireOwnership = customErrors.requireOwnership
 
 const Event = require('./../models/event')
 const handle404 = require('../../lib/custom_errors')
@@ -37,7 +35,6 @@ router.delete('/rsvps/:id', requireToken, (req, res, next) => {
       console.log('EVENT', event)
       const rsvpArray = event.rsvps
       const thisRsvp = rsvpArray.filter(rsvp => {
-        console.log('ANYTHING DOESNT MATTER AGAIN', typeof (req.user.id))
         if (rsvp.owner.toString() === req.user.id.toString()) {
           return rsvp
         }
