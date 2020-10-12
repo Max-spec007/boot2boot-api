@@ -3,15 +3,15 @@ This application was built for creating events, browsing lists of events, and ha
 **Technologies used**: Mongoose, MongoDb, Node, Express.
 
 **User Stories**:
-As an unregistered user, I would like to sign up with email and password.
-As a registered user, I would like to sign in with email and password.
-As a signed in user, I would like to change password.
-As a signed in user, I would like to sign out.
-As an unregistered user, I would like to see all events.
-As a signed in user, I would like to RSVP to an event.
-As a signed in user, I would like to create my own event.
-As a signed in user, I would like to update my own events.
-As a signed in user, I would like to delete my own events.
+- As an unregistered user, I would like to sign up with email and password.
+- As a registered user, I would like to sign in with email and password.
+- As a signed in user, I would like to change password.
+- As a signed in user, I would like to sign out.
+- As an unregistered user, I would like to see all events.
+- As a signed in user, I would like to RSVP to an event.
+- As a signed in user, I would like to create my own event.
+- As a signed in user, I would like to update my own events.
+- As a signed in user, I would like to delete my own events.
 
 **Github repos**:
 - API: https://github.com/Boot2boot/boot2boot-api
