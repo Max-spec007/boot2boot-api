@@ -31,6 +31,7 @@ The development process was started by creating an event model and its respectiv
 
 - add the ability to leave a review for an event
 - categorize events inside components sorted by types of events
+- add on a location/map feature for the events created.
 
 **Catalog of Routes (paths and methods) that the API expects**:
 | Verb   | URI Pattern            |
