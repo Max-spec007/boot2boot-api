@@ -14,12 +14,12 @@ This application was built for creating events, browsing lists of events, and ha
 - As a signed in user, I would like to delete my own events.
 
 **Github repos**:
-- API: https://github.com/Boot2boot/boot2boot-api
-- React: https://github.com/Boot2boot/boot2boot-react-client
+- API: https://github.com/Max-spec007/boot2boot-api
+- React: https://github.com/Max-spec007/boot2boot-react-client
 
 **Deployed sites**:
-- front end: https://boot2boot.github.io/boot2boot-react-client/#/
-- back end: https://gentle-eyrie-69733.herokuapp.com/
+- front end: https://max-spec007.github.io/boot2boot-react-client/#/
+- back end: https://surprise-surprise-api.herokuapp.com/
 
 **Wireframes and ERD**:
 ERD: https://imgur.com/3AU0wdE
